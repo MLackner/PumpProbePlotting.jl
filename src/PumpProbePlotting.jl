@@ -38,7 +38,7 @@ function PyPlot.plot(r::PumpProbeFitting.PumpProbeFit, m::PumpProbeModel, dls, w
     fh = figure(figsize=(12,12))
 
     subplot(331)
-    pcolormesh(x,y,z, vmin=vmin, vmax=vmax)
+    pcolormesh(x,y,zdata, vmin=vmin, vmax=vmax)
     colorbar()
     title("Input Data")
 
