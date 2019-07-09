@@ -9,7 +9,7 @@ export plot
 """
 Plots the fit result
 """
-function PyPlot.plot(r::PumpProbeFit, m::PumpProbeModel, dls, wns)
+function PyPlot.plot(r::PumpProbeFitting.PumpProbeFit, m::PumpProbeModel, dls, wns)
     x = r.m.wavenumbers
     y = r.m.delaytimes
     zfit = model2data(r.m)
