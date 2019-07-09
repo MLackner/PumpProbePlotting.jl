@@ -1,0 +1,9 @@
+name = "PumpProbePlotting"
+uuid = "77d550ca-342f-40f0-843d-70529f699fc8"
+authors = ["MLackner <lacknersmichael@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+PumpProbeFitting = "d69a5c84-9e33-11e9-0bd4-c547ea136c73"
+PumpProbeModels = "c045c9a4-9cbd-11e9-012e-3d86e60c81ee"
+PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
