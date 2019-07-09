@@ -57,7 +57,7 @@ function PyPlot.plot(r::PumpProbeFitting.PumpProbeFit, m::PumpProbeModel, dls, w
     ND = length(dls)
     for (i,k) in dls |> enumerate
         subplot(ND,3,3i-1)
-        plot(x, z[k,:], ".", color="k", alpha=0.3)
+        plot(x, zdata[k,:], ".", color="k", alpha=0.3)
         plot(x, zfit[k,:], "-", color="k", label="$(round(dlt[i], digits=1)) ps")
         plot(x, zmodel[k,:], "-", color="k", alpha=0.3)
         legend()
@@ -69,7 +69,7 @@ function PyPlot.plot(r::PumpProbeFitting.PumpProbeFit, m::PumpProbeModel, dls, w
     NW = length(wns)
     for (i,k) in wns |> enumerate
         subplot(NW+1,3,3i)
-        plot(y, z[:,k], ".", color="k", alpha=0.3)
+        plot(y, zdata[:,k], ".", color="k", alpha=0.3)
         plot(y, zfit[:,k], "-", color="k", label="$(round(wn[i], digits=1)) 1/cm")
         plot(y, zmodel[:,k], "-", color="k", alpha=0.3)
         vlines(t0, ylim()..., linestyle="--", alpha=0.3)
