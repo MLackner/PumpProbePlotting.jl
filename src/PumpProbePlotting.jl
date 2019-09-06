@@ -86,7 +86,6 @@ function PyPlot.plot(r::PumpProbeFitting.PumpProbeFit, m::PumpProbeModel, dls, w
     xlim(xlims...)
     legend()
 
-    plt.tight_layout()
     fh
 end
 
